@@ -16,12 +16,14 @@ public class TesteBackendApplication {
 
 	private final FilmController filmController;
 
+	private final RestTemplate restTemplate;
+
 	@Autowired
-	public TesteBackendApplication(FilmController filmController) {
+	public TesteBackendApplication(FilmController filmController, RestTemplate restTemplate) {
 		this.filmController = filmController;
+		this.restTemplate = restTemplate;
 	}
 	private final List<FilmResponseDTO> filmes = new ArrayList<>();
-	private final RestTemplate restTemplate = new RestTemplate();
 	private int idCounter = 1;
 
 	public static void main(String[] args) {
