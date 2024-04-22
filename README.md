@@ -19,3 +19,6 @@ Após isso fazer as requisições pelo **Postman**
 ## Tarefas Bônus
  
 - Implementado teste integrado de todos os endpoints
+
+## Observação
+A api SWAPI teve seu certificado vencido ontem 21/04/2024 as 18:50, então criei uma branch chamada fix-ssl-swapi que contem uma correção para que a aplicação não tente validar esse certificado ssl vencido.
